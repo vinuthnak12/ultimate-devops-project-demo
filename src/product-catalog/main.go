@@ -320,3 +320,12 @@ func createClient(ctx context.Context, svcAddr string) (*grpc.ClientConn, error)
 func helloGitHub() string {
     return "Hello, GitHub!"
 }
+
+func addNumbers(a int, b int) int {
+    return a + b
+}
+
+func main() {
+    result := addNumbers(5, 7)
+    fmt.Println("The sum is:", result)
+}
